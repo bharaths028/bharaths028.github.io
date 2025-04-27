@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharath Kumar S - Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            line-height: 1.6; 
+            color: #646464; 
+            background-color: #f9f9f9; 
+            overflow-x: hidden; 
+        }
+        header { 
+            text-align: center; 
+            padding: 60px 20px; 
+            background: linear-gradient(135deg, #003366 0%, #004080 100%); 
+            color: white; 
+            position: relative; 
+        }
+        header h1 { font-size: 3.5rem; font-weight: 500; margin-bottom: 10px; }
+        header h2 { font-size: 1.8rem; font-weight: 400; opacity: 0.9; }
+        .profile-img { 
+            width: 150px; 
+            height: 150px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            border: 3px solid #77c642; 
+            margin: 0 auto 20px; 
+            display: block; 
+            transition: transform 0.3s, box-shadow 0.3s; 
+        }
+        .profile-img:hover { 
+            transform: scale(1.05); 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+        }
+        .contact-info { 
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+            margin-top: 20px; 
+            gap: 20px; 
+        }
+        .contact-info p { 
+            font-size: 1.2rem; 
+            display: flex; 
+            align-items: center; 
+            transition: transform 0.3s; 
+        }
+        .contact-info p:hover { transform: translateY(-3px); }
+        .contact-info i { margin-right: 10px; color: #77c642; }
+        a { color: #77c642; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
+        }
+        .section-title { 
+            font-size: 2.5rem; 
+            color: #003366; 
+            text-align: center; 
+            margin-bottom: 30px; 
+            position: relative; 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            font-weight: 500; 
+        }
+        .section-title::before { 
+            content: ''; 
+            width: 50px; 
+            height: 3px; 
+            background: #77c642; 
+            position: absolute; 
+            bottom: -10px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+        }
+        section { margin-bottom: 60px; }
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 15px; font-size: 1.1rem; }
+        li strong { color: #003366; }
+        .profile-summary p { 
+            font-size: 1.2rem; 
+            line-height: 1.8; 
+            text-align: justify; 
+            background: rgba(119, 198, 66, 0.1); 
+            padding: 20px; 
+            border-radius: 5px; 
+        }
+        .work-history article { 
+            background: white; 
+            padding: 25px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+            margin-bottom: 20px; 
+            transition: transform 0.3s; 
+        }
+        .work-history article:hover { transform: translateY(-5px); }
+        article h3 { 
+            font-size: 1.6rem; 
+            color: #003366; 
+            margin-bottom: 5px; 
+        }
+        article p { 
+            font-style: italic; 
+            color: #666; 
+            margin-bottom: 10px; 
+        }
+        .academic-details p { 
+            font-size: 1.2rem; 
+            text-align: center; 
+            padding: 15px; 
+            background: rgba(119, 198, 66, 0.1); 
+            border-radius: 5px; 
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.5rem; }
+            header h2 { font-size: 1.4rem; }
+            .profile-img { width: 120px; height: 120px; }
+            .contact-info p { font-size: 1rem; }
+            .section-title { font-size: 2rem; }
+            .container { padding: 20px 10px; }
+            .profile-summary p, .academic-details p { font-size: 1rem; }
+            article h3 { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="images/profile_pic.jpg" alt="Bharath Kumar S Profile Picture" class="profile-img">
+        <h1>Bharath Kumar S</h1>
+        <h2>Full Stack Developer</h2>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> <a href="mailto:bharaths028@gmail.com">bharaths028@gmail.com</a></p>
+            <p><i class="fas fa-phone"></i> +91-9743532747</p>
+            <p><i class="fab fa-linkedin"></i> <a href="http://www.linkedin.com/in/gagana-s-kumar-27b5171a6">LinkedIn</a></p>
+            <p><i class="fab fa-github"></i> <a href="https://github.com/bharaths028">GitHub</a></p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Core Competencies -->
+        <section class="core-competencies">
+            <h2 class="section-title">Core Competencies</h2>
+            <ul>
+                <li><strong>Programming Languages & Frameworks:</strong> Python, JavaScript, Angular 12, AngularJS, Flask</li>
+                <li><strong>Web Technologies:</strong> HTML5, CSS3, Bootstrap, RESTful APIs</li>
+                <li><strong>Database Management:</strong> MSSQL, Snowflake, DB2, SQLAlchemy</li>
+                <li><strong>Chatbot & AI Technologies:</strong> RASA, Dialogflow, NLP, NLU, Intent Recognition, Entity Extraction</li>
+                <li><strong>DevOps & Tools:</strong> Docker, Jenkins, GIT, RabbitMQ</li>
+                <li><strong>Testing & Quality Assurance:</strong> Unittest</li>
+                <li><strong>Methodologies:</strong> Agile, MVC Architecture, Performance Optimization</li>
+            </ul>
+        </section>
+
+        <!-- Technical Exposure -->
+        <section class="technical-exposure">
+            <h2 class="section-title">Technical Exposure</h2>
+            <ul>
+                <li><strong>Chatbot Development:</strong> Engineered intelligent chatbots using RASA, incorporating NLP and NLU for advanced intent recognition and entity extraction, seamlessly integrated with front-end and back-end ecosystems.</li>
+                <li><strong>Full-Stack Development:</strong> Built responsive, user-centric front-ends with Angular 12 and JavaScript, paired with scalable back-end services using Python, Flask, and RESTful APIs.</li>
+                <li><strong>Database Optimization:</strong> Designed high-performance database schemas and queries with MSSQL, Snowflake, and SQLAlchemy to support data-intensive applications.</li>
+                <li><strong>Performance Optimization:</strong> Experienced in improving application performance through lazy loading and automated workflows.</li>
+                <li><strong>Collaboration:</strong> Strong team player, aligning solutions with business needs through requirement analysis.</li>
+            </ul>
+        </section>
+
+        <!-- Profile Summary -->
+        <section class="profile-summary">
+            <h2 class="section-title">Profile Summary</h2>
+            <p>Dynamic Full Stack Developer with 11+ years of experience, delivering innovative solutions in AI-driven chatbot development and full-stack web applications. Currently excelling at Capgemini for Cisco Systems, architecting conversational AI systems using RASA, integrated with Angular 12 front ends and Flask-based APIs. Previously spearheaded healthcare and insurance projects at Zeomega and Allianz, leveraging Python, JavaScript, and modern database technologies for robust implementations. Expert in performance optimization, reducing latency and enhancing user experiences through scalable, cutting-edge technical designs. Proven technical leader adept at requirement analysis, system architecture, and driving cross-functional collaboration to meet business objectives.</p>
+        </section>
+
+        <!-- Work History -->
+        <section class="work-history">
+            <h2 class="section-title">Work History</h2>
+            <article>
+                <h3>Professional II Engineer</h3>
+                <p>Capgemini (Deputed to CISCO), Bangalore - Apr’22-Present</p>
+                <ul>
+                    <li>Architected an AI-powered chatbot using RASA, leveraging NLP and NLU to improve user query resolution by 30%, integrated with Angular 12 UI and Flask RESTful APIs.</li>
+                    <li>Utilized Snowflake for optimized data storage and retrieval, reducing system response times by 20% through modular code and automated updates.</li>
+                    <li>Collaborated with business stakeholders to define conversational flows, ensuring technical solutions met operational needs.</li>
+                    <li>Technologies: RASA, Angular 12, Flask, Snowflake, RESTful APIs, Docker.</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Lead Software Developer</h3>
+                <p>Zeomega Infotech, Bangalore – Feb’17-Apr’22</p>
+                <ul>
+                    <li>Led full-stack development of healthcare platforms, delivering dynamic AngularJS front-ends and Python/MSSQL back-ends for seamless user experiences.</li>
+                    <li>Implemented performance enhancements like lazy loading, improving dashboard and worklist efficiency for healthcare professionals.</li>
+                    <li>Directed client migrations to updated systems with zero downtime, resolving UAT/production issues using MVC architecture.</li>
+                    <li>Technologies: AngularJS, Python, MSSQL, SQLAlchemy.</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Software Engineer</h3>
+                <p>Allianz Managed Operations & Services, Pune – Jan’13-Feb’17</p>
+                <ul>
+                    <li>Developed responsive insurance portals with AngularJS, JavaScript, HTML5, and CSS3, ensuring accessibility and cross-browser compatibility.</li>
+                    <li>Conducted Fit-Gap analysis with business analysts.</li>
+                    <li>Automated regression testing using Selenium and Jasmine, cutting manual testing time by 40% and accelerating release cycles.</li>
+                    <li>Technologies: AngularJS, JavaScript, Bootstrap, Selenium, MSSQL.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Academic Details -->
+        <section class="academic-details">
+            <h2 class="section-title">Academic Details</h2>
+            <p>Bachelor of Computer Science Engineering from Visvesvaraya Technological University, Bengaluru in 2013</p>
+        </section>
+    </div>
+</body>
+</html>
